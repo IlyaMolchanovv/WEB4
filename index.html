@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB BY ILYA MOLCHANOV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   
+  </head>
+
+  <body>
+    <header class="container-fluid">
+      <div class="m-auto p-3">
+        <img id = "logoimg" src="image.png"/>
+        <h2 class="name"> WEB BY ILYA MOLCHANOV </h2>
+      </div>
+    </header>
+    <main class="m-auto p-3">
+      <div class="m-auto" id="mainer">
+        <p class="row" id="navigation">
+          <a class="col-sm-12 col-md-4 col-lg-4 text-lg-center text-md-center" href="https://vk.com">ВКОНТАКТЕ</a>
+          <a class="col-sm-12 col-md-4 col-lg-4 text-lg-center text-md-center" href="https://wikipedia.com">WIKIPEDIA</a>
+          <a class="col-sm-12 col-md-4 col-lg-4 text-lg-center text-md-center" href="https://github.com">GITHUB</a>
+        </p>
+
+        <div>
+          <h2 id="links"><br>Гиперссылки</h2>
+          <ol>
+            <li><a href="http://example.com">Абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+        <li><a href="https://example.com" id="anchor">Абсолютная гиперссылка на главную страницу сайта example.com в протоколе https</a></li>
+        <li><a href="ftp://ftp.example.com/file.bin">Ссылка на файл на сервере FTP без авторизации</a></li>
+        <li><a href="ftp://user:pass@anysite.ru/anyfolder/anyfile.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+        <li><a href="https://ru.stackoverflow.com/questions/456623/%D0%9D%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4%D0%BD%D1%8B%D0%B9-%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D1%80%D0%B0%D0%B7%D0%BB%D0%B8%D1%87%D0%B8%D1%8F-dto-poco-pojo-%D0%B8-value-object#footer">Ссылка на фрагмент страницы некоторого сайта</a></li>
+        <li><a href="#anchor">Ссылка на фрагмент текущей страницы</a></li>
+        <li><a href="https://vk.com/doc145294955_515176723?hash=2de71841cb97a66e19&dl=4012ab250b148ef8a2">Ссылка с двумя параметрами в URL</a></li>
+        <li>
+        <ul>
+            <li><a href="https://habr.com/ru/" title="Публикации">Ссылка 1</a></li>
+            <li><a href="https://habr.com/ru/news/" title="Новости">Ссылка 2</a></li>
+            <li><a href="https://habr.com/ru/users/" title="Пользователи">Ссылка 3</a></li>
+            <li><a href="https://habr.com/ru/hubs/" title="Хабы">Ссылка 4</a></li>
+            <li><a href="https://habr.com/ru/companies/" title="Компании">Ссылка 5</a></li>
+            <li><a href="https://habr.com/ru/sandbox/" title="Песочница">Ссылка 6</a></li>
+        </ul>
+        </li>
+        <li><a>Ссылка без href</a></li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a href="https://habr.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+        <li><!--noindex--><a href="https://habr.com">Ссылка, запрещенная для индексации поисковиками</a><!--/noindex--></li>
+		<li> Укус способен вызвать <a href="#"> анафилактический шок </a></li>
+		<li><a href="#" target="_blank"><img src="pic1.jpg" alt="task14" /></a></li>
+		<li><img src="pic2.png" usemap="#box" alt="task15" />
+			<map name="box">
+				<area shape="rect" coords="0,0,75,75" href="#" title="1" alt="1">
+				<area shape="rect" coords="0,75,75,150" href="#" title="2" alt="1">
+				<area shape="rect" coords="75,0,150,75" href="#" title="3" alt="1">
+				<area shape="rect" coords="75,75,150,150" href="#" title="4" alt="1">
+			</map>
+		</li>
+		<li><a href="index.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li><a href="about/index.html">Относительная ссылка на страницу в каталоге about</a></li>
+        <li><a href="../index.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="../../index.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+        <li><a href="/">Сокращенная ссылка на главную</a></li>
+        <li><a href="/folder/index.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+          </ol>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 order-sm-first order-last">
+            <h2 id="table"> Таблица</h2>
+            <table class="p-3">
+              <tbody>
+                <tr>
+                  <th class="header_table" colspan="4">Заголовок таблицы</th>
+                </tr>
+                <tr>
+                  <td>Ячейка 11</td>
+                  <td>Ячейка 12</td>
+                  <td>Ячейка 13</td>
+                  <td>Ячейка 14</td>
+                </tr>
+                <tr class="even">
+                  <td>Ячейка 21</td>
+                  <td>Ячейка 22</td>
+                  <td rowspan="2" class="union">Ячейка 23</td>
+                  <td>Ячейка 24</td>
+                </tr>
+                <tr>
+                  <td>Ячейка 31</td>
+                  <td>Ячейка 32</td>
+                  <td>Ячейка 34</td>
+                </tr>
+                <tr class="even" align="center">
+                  <td>Ячейка 41</td>
+                  <td colspan="2" class="union">Ячейка 42</td>
+                  <td>Ячейка 44</td>
+                </tr>
+                <tr>
+                  <td>Ячейка 51</td>
+                  <td>Ячейка 52</td>
+                  <td>Ячейка 53</td>
+                  <td>Ячейка 54</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col-sm-12 order-sm-last order-first">
+          <h2 id="form">Форма</h2>
+          <form class="p-3" method="post">               
+            <label>Имя:<br>
+              <input name="field-name" value="" placeholder="Илья">
+            </label><br><br>
+
+            <label>
+              Ваш email:<br>
+              <input name="field-email" value="" placeholder="email@inbox.com" type="email">
+            </label><br><br>
+
+            <label>
+              Дата рождения:<br>
+                <input name="field-date" value="2003-07-21" type="date">
+            </label><br><br>
+
+            Пол:<br>
+            <label><input type="radio" name="radio-group-1" value="Мужской">Мужской</label>
+            <label><input type="radio" name="radio-group-1" value="Женский">Женский</label><br><br>
+
+            Количество конечностей:<br>
+            <label><input type="radio" name="radio-group-1" value="1"> 1  </label>
+            <label><input type="radio" name="radio-group-1" value="2"> 2  </label>
+            <label><input type="radio" name="radio-group-1" value="3"> 3  </label>
+            <label><input type="radio" name="radio-group-1" value="4"> 4  </label><br><br>
+
+            <label>
+              Сверхспособности:<br>
+              <select name="field-name-4[]" multiple="multiple">
+                <option value="Бессмертие">Бессмертие</option>
+                <option value="Прохождение сквозь стены" selected="selected">Прохождение сквозь стены</option>
+                <option value="Левитация" selected="selected">Левитация</option>
+              </select>
+            </label><br><br>
+
+            <label>
+              Биография:<br>
+              <textarea name="field-name-2" placeholder="Напишите о себе..."></textarea>
+            </label><br><br>
+
+            <label><input type="checkbox" name="check-1">С контрактом ознакомлен</label><br>
+
+            <input type="submit" value="Отправить">
+
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="m-auto p-2">© Molchanov Ilya 2021</footer>
+  </body>
+</html>
