@@ -71,94 +71,112 @@
 
         
           <div class="order-md-4 order-sm-5 order-5">
-            <h2 id="table"> Таблица</h2>
-            <table class="p-3">
-              <tbody>
-                <tr>
-                  <th class="header_table" colspan="4">Заголовок таблицы</th>
-                </tr>
-                <tr>
-                  <td>Ячейка 11</td>
-                  <td>Ячейка 12</td>
-                  <td>Ячейка 13</td>
-                  <td>Ячейка 14</td>
-                </tr>
-                <tr class="even">
-                  <td>Ячейка 21</td>
-                  <td>Ячейка 22</td>
-                  <td rowspan="2" class="union">Ячейка 23</td>
-                  <td>Ячейка 24</td>
-                </tr>
-                <tr>
-                  <td>Ячейка 31</td>
-                  <td>Ячейка 32</td>
-                  <td>Ячейка 34</td>
-                </tr>
-                <tr class="even" align="center">
-                  <td>Ячейка 41</td>
-                  <td colspan="2" class="union">Ячейка 42</td>
-                  <td>Ячейка 44</td>
-                </tr>
-                <tr>
-                  <td>Ячейка 51</td>
-                  <td>Ячейка 52</td>
-                  <td>Ячейка 53</td>
-                  <td>Ячейка 54</td>
-                </tr>
-              </tbody>
-            </table>
+    <div class="divg mt-4 mb-4 p-4">
+      <div class=" table-responsive">
+    <table calss="table table-bordered">
+  <caption>В каком возрасте люди чаще получают свои сверхспособности</caption>
+<thead>
+<tr>
+ <th>Наименование сверхспособности</th>
+ <th>0-18 лет</th>
+ <th>19-44 лет</th>
+ <th>45-59 лет</th>
+</tr>
+</thead>
+<tbody>
+  <tr class="colorr">
+    <td rowspan="2">Бессмертие (в России/Англии)</td>
+    <td>3000</td>
+    <td>2500</td>
+    <td>900</td>
+  </tr>
+  <tr class="colorr">
+
+    <td>9000</td>
+    <td>5400</td>
+    <td>1000</td>
+  </tr>
+  <tr >
+    <td>Левитация</td>
+    <td>8600</td>
+    <td>4500</td>
+    <td>3000</td>
+  </tr>
+  <tr class="colorr">
+    <td>Чтение мыслей</td>
+    <td>2500</td>
+    <td>1000</td>
+    <td>5600</td>
+  </tr>
+  <tr>
+    <td>Есть и не толстеть</td>
+    <td>50600</td>
+    <td>25700</td>
+    <td>10300</td>
+  </tr>
+</tbody>
+<tfoot>
+<tr class="colorr">
+  <td colspan="4">Итог: 0-18 лет</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+</div>
+<div class="order-md-5 order-sm-4 order-4">
+  <div class="divg tab mt-4 mb-4 p-4">
+<form action="#" method="post" id="forma">
+  <label  id="abs">
+        Имя:<br />
+  <input type="text" name="username" value="">
+  </label><br />
+  <label>
+         E-mail:<br />
+  <input type="email" name="email" value="">
+  </label><br />
+  <label>
+        Дата рождения:<br />
+  <input type="date" name="birthday" value=""></label><br/>
+<form action="#" method="post">
+
+
+Пол:<br />
+     <label><input type="radio" checked="checked"name="radio-group-1" value="Значение1" />женский</label>
+     <label><input type="radio" name="radio-group-1" value="Значение2" />мужской</label><br /></form>
+
+Количество конечностей:<br />
+  <label><input type="radio" checked="checked"name="radio-group-1" value="Значение1" />0</label>
+  <label><input type="radio" name="radio-group-1" value="Значение2" />1</label>
+  <label><input type="radio" name="radio-group-1" value="Значение2" />2</label>
+  <label><input type="radio" name="radio-group-1" value="Значение2" />3</label>
+  <label><input type="radio" name="radio-group-1" value="Значение2" />4</label>
+  <label><input type="radio" name="radio-group-1" value="Значение2" />5</label><br />
+
+  <label>
+           Сверхспособности:<br />
+           <select name="field-name-4[]" multiple="multiple">
+             <option value="Значение1">Бессмертие</option>
+             <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+             <option value="Значение3" selected="selected">Левитация</option>
+           </select>
+         </label><br />
+
+
+                    <label>
+                 Биография:<br />
+                 <textarea name="field-name-2"></textarea>
+               </label><br />
+
+               Чекбокс:<br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />с контрактом ознакомлен (а)</label><br />
+
+        Кнопка отправки формы
+              <input type="submit" value="Отправить" />
+            </form>
+            </div>
           </div>
-        
-	
-        <div class="order-md-5 order-sm-4 order-4">
-          <h2 id="form">Форма</h2>
-          <form class="p-3" method="post">               
-            <label>Имя:<br>
-              <input name="field-name" value="" placeholder="Илья">
-            </label><br><br>
-
-            <label>
-              Ваш email:<br>
-              <input name="field-email" value="" placeholder="email@inbox.com" type="email">
-            </label><br><br>
-
-            <label>
-              Дата рождения:<br>
-                <input name="field-date" value="2003-07-21" type="date">
-            </label><br><br>
-
-            Пол:<br>
-            <label><input type="radio" name="radio-group-1" value="Мужской">Мужской</label>
-            <label><input type="radio" name="radio-group-1" value="Женский">Женский</label><br><br>
-
-            Количество конечностей:<br>
-            <label><input type="radio" name="radio-group-1" value="1"> 1  </label>
-            <label><input type="radio" name="radio-group-1" value="2"> 2  </label>
-            <label><input type="radio" name="radio-group-1" value="3"> 3  </label>
-            <label><input type="radio" name="radio-group-1" value="4"> 4  </label><br><br>
-
-            <label>
-              Сверхспособности:<br>
-              <select name="field-name-4[]" multiple="multiple">
-                <option value="Бессмертие">Бессмертие</option>
-                <option value="Прохождение сквозь стены" selected="selected">Прохождение сквозь стены</option>
-                <option value="Левитация" selected="selected">Левитация</option>
-              </select>
-            </label><br><br>
-
-            <label>
-              Биография:<br>
-              <textarea name="field-name-2" placeholder="Напишите о себе..."></textarea>
-            </label><br><br>
-
-            <label><input type="checkbox" name="check-1">С контрактом ознакомлен</label><br>
-
-            <input type="submit" value="Отправить">
-
-          </form>
-        </div>
-	
-      
     </main>
     <footer class="m-auto p-2">© Molchanov Ilya 2021</footer>
 	    </div>
